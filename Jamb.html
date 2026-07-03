@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAMB Services | Student Portal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+}
+
+header{
+    background:#006400;
+    color:white;
+    padding:50px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:40px;
+}
+
+.notice{
+    max-width:1100px;
+    margin:20px auto;
+    background:#fff3cd;
+    color:#664d03;
+    border:1px solid #ffecb5;
+    padding:15px;
+    border-radius:8px;
+}
+
+.container{
+    max-width:1200px;
+    margin:30px auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#006400;
+    margin-bottom:10px;
+}
+
+.card p{
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:10px 15px;
+    border-radius:5px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.official{
+    background:#006400;
+}
+
+.help{
+    background:#004aad;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>JAMB Services</h1>
+<p>Information and assistance for common JAMB services.</p>
+</header>
+
+<div class="notice">
+<strong>Notice:</strong> This page is not the official JAMB website. For official transactions, always use the official JAMB portal.
+</div>
+
+<div class="container">
+
+<div class="card">
+<h3>Print Original JAMB Result</h3>
+<p>Find information about obtaining your official JAMB result.</p>
+<div class="buttons">
+<a href="https://www.jamb.gov.ng" target="_blank" class="btn official">Official JAMB Portal</a>
+<button class="btn help" onclick="requestService('Print Original JAMB Result')">Request Assistance</button>
+</div>
+</div>
+
+<div class="card">
+<h3>Print Admission Letter</h3>
+<p>Information on printing your JAMB admission letter.</p>
+<div class="buttons">
+<a href="https://www.jamb.gov.ng" target="_blank" class="btn official">Official JAMB Portal</a>
+<button class="btn help" onclick="requestService('Print Admission Letter')">Request Assistance</button>
+</div>
+</div>
+
+<div class="card">
+<h3>Change of Institution / Course</h3>
+<p>Learn about changing your institution or course.</p>
+<div class="buttons">
+<a href="https://www.jamb.gov.ng" target="_blank" class="btn official">Official JAMB Portal</a>
+<button class="btn help" onclick="requestService('Change of Institution / Course')">Request Assistance</button>
+</div>
+</div>
+
+<div class="card">
+<h3>JAMB Regularization</h3>
+<p>Information on JAMB regularization procedures.</p>
+<div class="buttons">
+<a href="https://www.jamb.gov.ng" target="_blank" class="btn official">Official JAMB Portal</a>
+<button class="btn help" onclick="requestService('JAMB Regularization')">Request Assistance</button>
+</div>
+</div>
+
+<div class="card">
+<h3>CAPS Admission Status</h3>
+<p>Check information about admission status through CAPS.</p>
+<div class="buttons">
+<a href="https://www.jamb.gov.ng" target="_blank" class="btn official">Official JAMB Portal</a>
+<button class="btn help" onclick="requestService('CAPS Admission Status')">Request Assistance</button>
+</div>
+</div>
+
+<div class="card">
+<h3>O'Level Result Upload</h3>
+<p>Information about uploading O'Level results.</p>
+<div class="buttons">
+<a href="https://www.jamb.gov.ng" target="_blank" class="btn official">Official JAMB Portal</a>
+<button class="btn help" onclick="requestService('O-Level Result Upload')">Request Assistance</button>
+</div>
+</div>
+
+<div class="card">
+<h3>Correction of Data</h3>
+<p>Guidance on correcting your JAMB details.</p>
+<div class="buttons">
+<a href="https://www.jamb.gov.ng" target="_blank" class="btn official">Official JAMB Portal</a>
+<button class="btn help" onclick="requestService('Correction of Data')">Request Assistance</button>
+</div>
+</div>
+
+<div class="card">
+<h3>JAMB Brochure & Syllabus</h3>
+<p>Access information about the latest brochure and syllabus.</p>
+<div class="buttons">
+<a href="https://www.jamb.gov.ng" target="_blank" class="btn official">Official JAMB Portal</a>
+<button class="btn help" onclick="requestService('JAMB Brochure & Syllabus')">Request Assistance</button>
+</div>
+</div>
+
+</div>
+
+<footer>
+&copy; 2026 Student Portal | JAMB Services Information
+</footer>
+
+<script>
+function requestService(service){
+    alert(
+        "You selected: " + service +
+        "\\n\\nConnect this button to your WhatsApp, contact form, or customer support page to receive assistance."
+    );
+}
+</script>
+
+</body>
+</html>

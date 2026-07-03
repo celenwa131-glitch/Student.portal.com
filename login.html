@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>login page</title>
+<link rel="stylesheet" href="/CSS/login.css">
+
+</head>
+
+<body>
+  
+
+<div class="container">
+
+<h2><strong>LOGIN PAGE</strong></h2>
+
+<form action="php/register.php" method="POST">
+
+<input type="text" name="fullname" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<select name="class" required>
+<option value="">Select Class</option>
+<option>JSS1</option>
+<option>JSS2</option>
+<option>JSS3</option>
+<option>SS1</option>
+<option>SS2</option>
+<option>SS3</option>
+</select>
+
+<input type="password" name="password" placeholder="Password" required>
+
+<button type="submit">Register</button>
+
+</form>
+
+<p>Already have an account?
+<a href="#">Login</a></p>
+
+</div>
+
+</body>
+</html>

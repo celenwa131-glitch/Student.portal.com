@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Training Courses</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f7fc;
+}
+
+header{
+background:#004aad;
+color:white;
+padding:50px 20px;
+text-align:center;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:40px auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.card h2{
+margin:15px 0;
+color:#004aad;
+}
+
+.price{
+font-size:22px;
+font-weight:bold;
+color:#28a745;
+margin:10px 0;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#004aad;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#003080;
+}
+
+footer{
+background:#004aad;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Online Training Academy</h1>
+<p>Choose a course and start learning today.</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<img src="images/web.jpg" alt="Web Development">
+<h2>Web Development</h2>
+<p>Learn HTML, CSS, JavaScript, PHP and MySQL.</p>
+<div class="price">₦100,000</div>
+<button onclick="enroll('Web Development','50000')">Enroll Now</button>
+</div>
+
+<div class="card">
+<img src="images/graphics.jpg" alt="Graphics Design">
+<h2>Graphics Design</h2>
+<p>Learn Photoshop, CorelDRAW and Canva.</p>
+<div class="price">₦50,000</div>
+<button onclick="enroll('Graphics Design','35000')">Enroll Now</button>
+</div>
+
+<div class="card">
+<img src="images/video.jpg" alt="Video Editing">
+<h2>Video Editing</h2>
+<p>Learn Premiere Pro and CapCut.</p>
+<div class="price">₦40,000</div>
+<button onclick="enroll('Video Editing','40000')">Enroll Now</button>
+</div>
+
+<div class="card">
+<img src="images/python.jpg" alt="Python Programming">
+<h2>Python Programming</h2>
+<p>Become a Python developer.</p>
+<div class="price">₦60,000</div>
+<button onclick="enroll('Python Programming','60000')">Enroll Now</button>
+</div>
+
+<div class="card">
+<img src="images/digital.jpg" alt="Digital Marketing">
+<h2>Digital Marketing</h2>
+<p>Learn Facebook Ads, SEO and Google Ads.</p>
+<div class="price">₦30,000</div>
+<button onclick="enroll('Digital Marketing','30000')">Enroll Now</button>
+</div>
+
+<div class="card">
+<img src="images/uiux.jpg" alt="UI/UX Design">
+<h2>UI/UX Design</h2>
+<p>Master Figma and Adobe XD.</p>
+<div class="price">₦45,000</div>
+<button onclick="enroll('UI/UX Design','45000')">Enroll Now</button>
+</div>
+
+</div>
+
+<footer>
+© 2026 Online Training Academy
+</footer>
+
+<script>
+
+function enroll(course,price){
+
+let phone="2349166393108"; // Replace with your WhatsApp number
+
+let message=
+"Hello, I want to enroll in the course:%0A%0A"+
+"Course: "+course+
+"%0APrice: ₦"+price;
+
+window.open("https://wa.me/"+phone+"?text="+message,"_blank");
+
+}
+
+</script>
+
+</body>
+</html>

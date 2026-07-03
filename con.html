@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Student Portal</title>
+<style>
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+header{
+    background:#004aad;
+    color:#fff;
+    text-align:center;
+    padding:50px 20px;
+}
+
+nav{
+    background:#003080;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.container{
+    max-width:1100px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    padding:20px;
+}
+
+.contact-info,
+.contact-form{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#004aad;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin:15px 0;
+    line-height:1.7;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+.contact-form textarea{
+    height:150px;
+    resize:vertical;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#004aad;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#003080;
+}
+
+footer{
+    background:#004aad;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    .container{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Contact Us</h1><br><br>
+<p>We're here to help. Get in touch with us.</p>
+</header>
+
+<nav>
+<a href="/HTML/Index.html">HOME</a>
+<a href="about.html">ABOUT</a>
+<a href="login.html">LOGIN</a>
+<a href="/HTML/con.html">CONTACT</a>
+</nav>
+
+<div class="container">
+
+<div class="contact-info">
+
+<h2>Contact Information</h2>
+
+<h4><strong>SCHOOL:</strong>SUCCESS ACADEMY TECH</h4><br><br>
+
+<h4><strong>ADDRESS:</strong> Success ACademy, ANAMBRA, STATE</h4><br><br>
+
+<h4><strong>PHONE:</strong> +234 9066393108</h4><br><br>
+
+<h4><strong>EMAIL: </strong></strong>successndukwu3@gmail.com</h4><br><br>
+
+<h4><strong>OFFICE HOURS:</strong><br><br>
+Monday - Friday: 8:00 AM - 5:00 PM</h4>
+
+</div>
+
+<div class="contact-form">
+
+<h2>Send Us a Message</h2>
+
+<form action="#" method="post">
+
+<input type="text" name="fullname" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<input type="text" name="subject" placeholder="Subject" required>
+
+<textarea name="message" placeholder="Type your message here..." required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+<footer>
+&copy; 2026 Student Portal. All Rights Reserved.
+</footer>
+
+</body>
+</html>

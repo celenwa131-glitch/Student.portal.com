@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Gist | Student Portal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#004aad,#007bff);
+    color:#fff;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+nav{
+    background:#003080;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.container{
+    max-width:1200px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.gist-card{
+    background:#fff;
+    margin-bottom:25px;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gist-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.content{
+    padding:25px;
+}
+
+.category{
+    display:inline-block;
+    background:#004aad;
+    color:#fff;
+    padding:6px 15px;
+    border-radius:20px;
+    font-size:13px;
+    margin-bottom:15px;
+}
+
+.content h2{
+    color:#004aad;
+    margin-bottom:10px;
+}
+
+.date{
+    color:#777;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.content p{
+    line-height:1.8;
+}
+
+.read-more{
+    display:inline-block;
+    margin-top:20px;
+    background:#004aad;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.read-more:hover{
+    background:#003080;
+}
+
+footer{
+    background:#004aad;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    header h1{
+        font-size:30px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>📢 School Gist</h1>
+<p>Latest News, Events, Achievements and Campus Information</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="school-gist.html">School Gist</a>
+<a href="updates.html">Updates</a>
+
+</nav>
+
+<div class="container">
+
+<div class="gist-card">
+<img src="images/event1.jpg" alt="School Event">
+
+<div class="content">
+<span class="category">Campus News</span>
+
+<h2>Orientation Programme for New Students</h2>
+
+<p class="date">📅 July 3, 2026</p>
+
+<p>
+The school management welcomes all newly admitted students. The orientation programme will introduce students to the school's academic system, facilities, rules, and opportunities.
+</p>
+
+<a href="#" class="read-more">Read More</a>
+
+</div>
+</div>
+
+<div class="gist-card">
+<img src="images/sports.jpg" alt="Sports">
+
+<div class="content">
+<span class="category">Sports</span>
+
+<h2>Inter-House Sports Competition Announced</h2>
+
+<p class="date">📅 July 1, 2026</p>
+
+<p>
+Preparations have begun for the annual inter-house sports competition. Students are encouraged to participate in various sporting activities.
+</p>
+
+<a href="#" class="read-more">Read More</a>
+
+</div>
+</div>
+
+<div class="gist-card">
+<img src="images/library.jpg" alt="Library">
+
+<div class="content">
+<span class="category">Academics</span>
+
+<h2>Library Opens Extended Study Hours</h2>
+
+<p class="date">📅 June 29, 2026</p>
+
+<p>
+The school library will now remain open until 8:00 PM during the examination period to provide students with more study time.
+</p>
+
+<a href="#" class="read-more">Read More</a>
+
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>&copy; 2026 Student Portal | School Gist</p>
+</footer>
+
+</body>
+</html>
