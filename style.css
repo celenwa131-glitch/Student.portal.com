@@ -1,0 +1,127 @@
+*{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+    background-image: url("/Images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+        nav{
+            background:#004aad;
+            color:white;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 40px;
+        }
+
+        nav h2{
+            font-size:20px;
+            color:#f60;
+            border:solid red;
+            border-radius:3px;
+            padding:3px;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            padding:3px;
+        }
+        #text{
+        justify-content:center;
+        align-items:center ;
+        color:#F60;
+        display:flex;
+        }
+
+        nav ul li{
+            margin-left:15px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            cursor:pointer;
+        }
+        
+        #ok{
+            border:solid white;
+            border-radius:5px;
+            padding:10px;
+            display:inline-block;
+            color:red;
+            background:white;
+        }
+
+        .hero{
+            text-align:center;
+            padding:80px 20px;
+            background:linear-gradient(to right,#004aad,#007bff);
+            color:white;
+        }
+
+        .hero h1{
+            font-size:45px;
+            margin-bottom:20px;
+            color:orange;
+        }
+
+        .hero p{
+            font-size:18px;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin:10px 25px;
+            padding:15px 30px;
+            background:white;
+            color:#004aad;
+            text-decoration:none;
+            border-radius:6px;
+            font-weight:bold;
+        }
+        #suc{
+            justify-content:center ;
+            color:red;
+            display:flex;
+        }
+
+        .services{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+            padding:50px;
+        }
+
+        .card{
+            width:280px;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,.1);
+            text-align:center;
+        }
+
+        .card h3{
+            color:#004aad;
+            margin-bottom:15px;
+        }
+
+        footer{
+            background:#004aad;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+  
